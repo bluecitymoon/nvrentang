@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        <form action="login" method="get">
+        <form name="loginform" action="/nvrentang/login" method="post">
             <input type="text" name="username">
             <input type="text" name="password">
             <input type="submit" value="SUBMIT">

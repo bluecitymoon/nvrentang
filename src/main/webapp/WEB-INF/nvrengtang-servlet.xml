@@ -14,8 +14,7 @@
 	<!-- 对包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 需要更改 -->
 	<context:component-scan base-package="com.nvrentang.controller" />
 
-	<bean
-		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -25,5 +24,8 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />  
 	</bean>
+	
+	<mvc:default-servlet-handler/> 
 </beans>
