@@ -20,7 +20,7 @@ html{
 */
 
 html { 
-  background: url('../img/citybackground.jpg') no-repeat center center fixed; 
+  background: url('../img/window-background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

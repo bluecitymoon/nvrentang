@@ -1,12 +1,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Administrator Login</title>
+<title>入口</title>
 <link rel="stylesheet" href="<c:url value="/css/styles.css" />" />
 </head>
 
@@ -15,7 +14,7 @@
 	<div id="formContainer">
 		<c:url var="loginUrl" value="/login" />
 		<form:form id="login" modelAttribute="userAttribute" method="POST" action="${loginUrl}">
-		<a href="#" id="flipToRecover" class="flipLink">Forgot?</a>
+		<a href="#" id="flipToRecover" class="flipLink">忘了密码？</a>
 			<table>
 				<tr>
 					<td><form:input id="loginEmail" path="userName" /></td>
@@ -24,11 +23,11 @@
 					<td><form:password id="loginPass" path="password" /></td>
 				</tr>
 			</table>
-			<input type="submit" value="提交" />
+			<input id= "loginSubmitButton" type="submit" value="登陆" />
 		</form:form>
 		
 		<form id="recover" method="post" action="/findPassword">
-			<a href="#" id="flipToLogin" class="flipLink">Forgot?</a> <input type="text" name="recoverEmail" id="recoverEmail" value="Email" />
+			<a href="#" id="flipToLogin" class="flipLink">忘了密码？</a> <input type="text" name="recoverEmail" id="recoverEmail" value="Email" />
 			<input type="submit" name="submit" value="Recover" />
 		</form>
 		

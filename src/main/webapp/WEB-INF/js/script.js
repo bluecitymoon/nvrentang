@@ -41,4 +41,20 @@ $(function(){
 		
 		return false;
 	}
+	
+	/**
+	 * <tr>
+					<td><form:input id="loginEmail" path="userName" /></td>
+				</tr>
+				<tr>
+					<td><form:password id="loginPass" path="password" /></td>
+				</tr>
+	 */
+	$('#loginSubmitButton').click(function(e) {
+		
+		if ($('#loginEmail').val() == "") {
+			alert("Input your user name.");
+			return;
+		}
+	});
 });
