@@ -51,10 +51,10 @@ p { padding:0; margin:0; }
 img { border:0; }
 
 #iphone-scrollcontainer { height:461px; width:320px; position:absolute; top:140px; left:340px; overflow:hidden; }
-
+#notifications {height:461px; width:320px; position:absolute; top:140px; left:740px; overflow:hidden;}
 .row { clear:both; }
 .icon { float:left; margin:9px 11px; }
-.ico_txt { text-align:center; font-family:Georgia, Times, serif; font-size:15px; color:#8B0A50; }
+.ico_txt { text-align:center; font-family:Georgia, Times, serif; font-size:15px; color:#8B0A50; font-weight: bold;}
 
 #springboard-bar { position:absolute; top:368px; background-image:url(../images/springboard-bar-bg.png);
 			background-repeat:repeat-x; width:100%; height:92px; display:none; /* Will be displayed with jQuery */ }
